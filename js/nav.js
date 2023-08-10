@@ -4,36 +4,36 @@ const navContent = document.querySelector(".navbar-content");
 const navbarBrand = document.querySelector(".navbar-brand");
 const navbar = document.querySelector(".nav-container");
 const navbarBrandItem = document.querySelector(".navbar-brand-item");
+const navbarBtn = document.querySelector(".navbar-btn");
+const navbarImg = document.querySelector(".navbar-image");
 
 if(x.matches){
     console.log(navCollapse);
     console.log(navContent);
     navCollapse.appendChild(navContent);
     navbar.appendChild(navbarBrand);
+    navbarImg.src = "assets/imagenes/logo/logo-humaya-75x75.png";
     navbar.classList.remove("justify-content-around");
-    console.log("This is a narrow screen — less than 576px wide.");
 }
 else
 {
     navbar.appendChild(navContent);
     navbarBrandItem.appendChild(navbarBrand);
     navbar.classList.add("justify-content-around");
-    console.log("This is a wide screen — more than 576px wide.");
+    navbarImg.src = "assets/imagenes/logo/logo-humaya-100x100.png";
 }
 
 
 x.onchange = (e) => {
     if (e.matches) {
-        console.log(navCollapse);
-        console.log(navContent);
         navCollapse.appendChild(navContent);
         navbar.appendChild(navbarBrand);
         navbar.classList.remove("justify-content-around");
-        console.log("This is a narrow screen — less than 576px wide.");
+        navbarImg.src = "assets/imagenes/logo/logo-humaya-75x75.png";
     } else {
         navbar.appendChild(navContent);
         navbarBrandItem.appendChild(navbarBrand);
         navbar.classList.add("justify-content-around");
-        console.log("This is a wide screen — more than 576px wide.");
+        navbarImg.src = "assets/imagenes/logo/logo-humaya-100x100.png";
     }
 };

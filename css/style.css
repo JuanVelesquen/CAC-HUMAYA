@@ -1,21 +1,83 @@
 
+:root{
+    --bg: rgba(0, 0, 0, 0.8);   
+}
+
+body{
+    font-family: 'Ysabeau Infant', sans-serif;
+    font-weight: 500;
+}
+
+h1{
+    color: #f1e9e6 ;
+    font-size: 2.5rem;
+    font-weight: 300;
+}
+
+main{
+    background-color: rgb(100, 97, 97);
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
 /*------------------NAVBAR FIXES------------------*/
+.navbar {
+    --bs-navbar-toggler-border-color: rgba(245, 245, 245, 0.623);
+}
+
+.nav{
+    gap: 2rem;
+}
+.navbar-custom{
+    background-color:var(--bg);
+}
 .nav-link{
     color: whitesmoke;
     padding: 5px 0px;
 }
 
-.nav{
-    gap: 1rem;
+.nav-link:hover{
+    color: rgb(156, 152, 152);
+}
+.nav-link:focus{
+    color: rgb(156, 152, 152);
+}
+.nav-item{
+    display: flex;
+    align-items: center;
 }
 
 .navbar-toggler{
     display: none;
+    color:#d5ab8b;
+}
+
+/*----------------HERO----------------*/
+
+.hero{
+    background-image: url(../assets/imagenes/central/hero.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    height: 500px;
 }
 
 @media (max-width:576px) {
+    .nav{
+        gap: 0rem;
+    }
     .navbar-toggler{
         display: block;
+    }
+    .nav-item .nav-link{
+        margin: 0.5rem 1rem!Important;
+    }
+    .hero{
+        height: 350px;
     }
 
 }
