@@ -265,8 +265,9 @@ button{
         background-size: cover;
     }
     .hero__body{
-        bottom: 10%;
-        right: 10%;
+        bottom: 0%;
+        right: 0%;
+        padding: 0rem 1rem;
     }
     p,button,a{
         font-size: 1rem;
