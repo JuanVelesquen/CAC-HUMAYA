@@ -227,7 +227,6 @@ button{
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 .calidad__item{
     width: 15%;
@@ -293,6 +292,10 @@ button{
     .productos__body:last-child .productos__body-info{
         width: 100%;
         order: 2;
+    }
+
+    .calidad__item-list{
+        gap: 3rem;
     }
 
 }
