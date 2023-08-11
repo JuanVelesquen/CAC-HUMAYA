@@ -12,7 +12,6 @@ if(x.matches){
     console.log(navContent);
     navCollapse.appendChild(navContent);
     navbar.appendChild(navbarBrand);
-    navbarImg.src = "assets/imagenes/logo/logo-humaya-75x75.png";
     navbar.classList.remove("justify-content-around");
 }
 else
@@ -20,7 +19,6 @@ else
     navbar.appendChild(navContent);
     navbarBrandItem.appendChild(navbarBrand);
     navbar.classList.add("justify-content-around");
-    navbarImg.src = "assets/imagenes/logo/logo-humaya-100x100.png";
 }
 
 
@@ -29,11 +27,9 @@ x.onchange = (e) => {
         navCollapse.appendChild(navContent);
         navbar.appendChild(navbarBrand);
         navbar.classList.remove("justify-content-around");
-        navbarImg.src = "assets/imagenes/logo/logo-humaya-75x75.png";
     } else {
         navbar.appendChild(navContent);
         navbarBrandItem.appendChild(navbarBrand);
         navbar.classList.add("justify-content-around");
-        navbarImg.src = "assets/imagenes/logo/logo-humaya-100x100.png";
     }
 };
