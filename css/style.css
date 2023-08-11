@@ -32,6 +32,11 @@ p,button,a{
     color: var(--txtColor);
     transition: 300ms ease-in;
 }
+ul,li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 img{
     width: 100%;
     height: auto;
@@ -172,7 +177,7 @@ button{
 
 .productos__body:last-child {
     background-color: var(--last_child_bg);
-    max-height: 300px;
+    max-height: 350px;
 }
 .productos__body:last-child .productos__body-info{
     background-color: transparent;
@@ -204,10 +209,45 @@ button{
 }
 
 .productos__body:last-child .productos__img img{
-    width: 55%;
+    width: 50%;
     max-height: 85%;
 }
 
+/*--------------CALIDAD--------------*/
+.calidad{
+    background-color: var(--bg);
+}
+.calidad__title{
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
+    font-size: 2.2rem;
+}
+.calidad__item-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.calidad__item{
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.calidad__item-img{
+    width: 50%;
+
+}
+.calidad__subtitle{
+    text-align: center;
+    font-size: 1rem;
+    margin-inline-start: 50%;
+    margin-inline-end: 50%;
+    color: var(--acent);
+}
+
+/*------------QUERIES----------*/
 @media (max-width:576px) {
     .nav{
         gap: 0rem;
