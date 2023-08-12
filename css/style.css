@@ -6,6 +6,9 @@
     --bg_secondary_opacity: rgba(55, 54, 54, 0.5);
     --acent: #d5ab8b;
     --txtColor: #f1e9e6;  
+    --last_child_color:#63432b;
+    --last_child_bg:#bca177;
+    --form_input: #756049;
 }
 
 body{
@@ -40,6 +43,13 @@ ul,li{
 img{
     width: 100%;
     height: auto;
+}
+input,textarea{
+    color:white!important;
+    background-color: var(--form_input)!important;
+    border-radius: 0%!important;
+    border: none!important;
+    
 }
 
 button{
@@ -128,8 +138,6 @@ button{
 }
 .productos__body{
     display: flex;
-    --last_child_color:#63432b;
-    --last_child_bg:#bca177;
 }
 .productos__img{
     width: 50%;
@@ -247,10 +255,106 @@ button{
     color: #bca177;
 }
 
+/*---------CONTACTANOS----------*/
+.contactanos{
+    background-color: var(--bg);
+}
+.contactanos__title{
+    margin: 0;
+    color: white;
+    text-align: center;
+    font-weight: 500;
+}
+
+.contactanos__body{
+    display: flex;
+}
+.contactanos__img{
+    width: 45%;
+}
+
+.contactanos__body-info{
+    background-color: white;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.contactanos__body-info-title{
+    color: var(--form_input);
+    text-align: center;
+    margin: 2rem;
+}
+
+.contactanos__body-form{
+    display: flex;
+    flex-direction: column;
+    min-width: 60%;
+}
+.contactanos__body-form-p{
+    margin-inline-start: 20%;
+    margin-inline-end: 20%;
+}
+
+.contactanos__body-form-btn{
+    font-size: 1rem;
+    color: var(--form_input);
+    background-color: transparent;
+    border: 2px solid var(--form_input);
+    border-radius: 0;
+    margin: 1rem;
+}
+.contactanos__body-form-btn:hover{
+    color: var(--last_child_bg);
+    background-color: var(--form_input);
+}
+
+.btn-center{
+    display: flex;
+    justify-content: center;
+}
+
+/*-----------RECETAS------------*/
+.recetas{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    border-top: none;
+    border-radius: 0%;
+    background-color: var(--last_child_bg);
+}
+.card-title{
+    margin: 0.15rem 0rem;
+    text-align: center;
+    color: var(--form_input);
+}
+
+.card-body{
+    padding: 0.5rem 1.5rem;
+}
+
+.card-img-top{
+    border-radius: 0%;
+}
+.card-text{
+    font-size: 0.75rem;
+}
+.recetas__card-body-btn{
+    padding: 0.25rem 0.5rem;
+    font-size: 0.5rem;
+    text-decoration: none;
+}
 /*------------QUERIES----------*/
 @media (max-width:576px) {
     .nav{
         gap: 0rem;
+        flex-direction: column;
+        align-items: center;
     }
     .navbar-toggler{
         display: block;
@@ -305,12 +409,28 @@ button{
     .productos__body:not(:last-child){
         flex-direction: column;
     }
-    .productos__body:not(:last-child) .productos__img{
+    .productos__body:not(:last-child) .productos__img, .contactanos__body-info{
         width: 100%;
         order: 1;
     }
     .productos__body:not(:last-child) .productos__body-info{
         width: 100%;
         order: 2;
+    }
+
+    .contactanos__body{
+        flex-direction: column;
+    }
+    .contactanos__img {
+        display: none;
+    }
+
+    .recetas{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .card{
+        width: 45vh!important;
     }
 }
