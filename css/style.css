@@ -308,7 +308,7 @@ button{
     margin: 1rem;
 }
 .contactanos__body-form-btn:hover{
-    color: var(--last_child_bg);
+    color: white;
     background-color: var(--form_input);
 }
 
@@ -345,9 +345,13 @@ button{
     font-size: 0.75rem;
 }
 .recetas__card-body-btn{
+    color: var(--last_child_color);
     padding: 0.25rem 0.5rem;
     font-size: 0.5rem;
     text-decoration: none;
+}
+.recetas__card-body-btn:hover{
+    color: var(--last_child_bg);
 }
 /*------------QUERIES----------*/
 @media (max-width:576px) {
