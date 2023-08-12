@@ -107,7 +107,7 @@ button{
     gap: 0.5rem;
 }
 .hero__Title{
-    font-size: 2.45rem;
+    font-size: 2.35rem;
 }
 .hero__btn{
     background-color: var(--bg_opacity);
@@ -244,7 +244,7 @@ button{
     font-size: 1rem;
     margin-inline-start: 50%;
     margin-inline-end: 50%;
-    color: var(--acent);
+    color: #bca177;
 }
 
 /*------------QUERIES----------*/
