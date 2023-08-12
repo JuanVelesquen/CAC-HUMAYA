@@ -76,6 +76,7 @@ button{
 .navbar-toggler{
     display: none;
     color:var(--acent);
+    padding: 0.25rem 0.5rem;
 }
 
 /*----------------HERO----------------*/

@@ -1,7 +1,7 @@
 var x = window.matchMedia("(max-width: 576px)");
 const navCollapse =  document.getElementById("navbarToggleExternalContent");
 const navContent = document.querySelector(".navbar-content");
-const navbarBrand = document.querySelector(".navbar-brand");
+const navbarBrand = document.querySelector(".navbar-logo");
 const navbar = document.querySelector(".nav-container");
 const navbarBrandItem = document.querySelector(".navbar-brand-item");
 const navbarBtn = document.querySelector(".navbar-btn");
