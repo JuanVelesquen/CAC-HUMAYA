@@ -14,16 +14,15 @@
 body{
     font-family: 'Ysabeau Infant', sans-serif;
     font-weight: 500;
+    background: linear-gradient(360deg,#787777,#3e3b3b);
 }
 
-main{
-    background: linear-gradient(#3e3b3b,#201f1f);
-}
 
 h1,h2,h3,h4,h5,p,a{
     line-height: 1.0;
     margin: 0.5rem 0rem;
     color: var(--txtColor);
+    text-decoration: none;
 }
 h1{
     color: var(--txtColor);
@@ -40,7 +39,7 @@ ul,li{
     margin: 0;
     padding: 0;
 }
-img{
+img,iframe{
     width: 100%;
     height: auto;
 }
@@ -54,6 +53,10 @@ input,textarea{
 
 button{
     text-decoration: none;
+}
+
+footer{
+    background-color: #2b2828;
 }
 
 /*------------------NAVBAR FIXES------------------*/
@@ -320,7 +323,9 @@ button{
 /*-----------RECETAS------------*/
 .recetas{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    gap: 1rem;
+    margin: 1rem 1rem;
 }
 
 .card{
@@ -353,6 +358,53 @@ button{
 .recetas__card-body-btn:hover{
     color: var(--last_child_bg);
 }
+
+/*-----------FOOTER----------*/
+.footer-body{
+    display: flex;
+    justify-content: space-evenly;
+    padding:1rem;
+}
+
+.footer-links{
+    align-items: center;
+}
+.footer-list__title{
+    color: var(--acent);
+    font-size: 1.25rem;
+    margin: 1rem 0rem;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.footer-body .footer-map .footer-list{
+    gap: .5rem;
+    justify-content: space-between;
+}
+.footer-item a{
+    font-size: 1rem;
+}
+.footer-item img{
+    width: 32px;
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.footer-logo img{
+    min-height: 20vh;
+}
+
+.footer-map{
+    width: 20%;
+}
+
 /*------------QUERIES----------*/
 @media (max-width:576px) {
     .nav{
@@ -369,6 +421,7 @@ button{
     .navbar-image{
         max-width: 50px;
     }
+    
     .hero{
         height: 250px;
         background-size: cover;
@@ -407,6 +460,14 @@ button{
         gap: 3rem;
     }
 
+    .recetas{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .card{
+        width: 45vh!important;
+    }
 }
 
 @media (max-width:991px) {
@@ -429,12 +490,20 @@ button{
         display: none;
     }
 
-    .recetas{
+    .footer-body{
         flex-direction: column;
         align-items: center;
-        gap: 2rem;
     }
-    .card{
-        width: 45vh!important;
+    .footer-logo{
+        display: none;
+    }
+    .footer-map{
+        width: 100%;
+    }
+    .footer-flex{
+        width: 100%;
+    }
+    .footer-links{
+        align-items:normal;
     }
 }
