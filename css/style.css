@@ -495,13 +495,14 @@ footer{
         display: none;
     }
 
-    .footer-body{
-        flex-direction: column;
-    }
-    .footer-flex:first-child{
+    .footer-title{
         display: none;
     }
     .footer-flex{
+        display: none;
         width: 100%;
+    }
+    .footer-links-container{
+        display: block;
     }
 }
